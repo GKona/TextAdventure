@@ -1,9 +1,40 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <title></title>
+    <meta charset="utf-8"/>
+    <title>Working Title!</title>
+    <link href="css/Reset.css" rel="stylesheet" />
+    <link href="css/Main.css" rel="stylesheet" />
 </head>
 <body>
+    <div id="impress">
+        <!-- Intro Slide -->
+        <div id="intro" class="step slide">
+            <div class="slide-text">
+                <p class="slide-body">You are walking down an empty street all by your lonesome.
+                It occurs to you that you've forgotten where you're going, as you stand there you notice a wallet infront of your feet. 
+                The streets appear earily silent as you scan your surrounding for the owner of the wallet.
+                <br />
+                ..."Pick it up already!", the thought echoes in your mind over and over again, 
+                as if a greater power is trying to communicate great wisdom directly to you...
+                </p>
+                <hr /><br />
+                <p><a href="#Pickup">You decide to pick the wallet up off the ground.</a></p>
+                <p>-OR-</p>
+                <p><a href="#DontPickup">You ignor the clear signs from the universe and decide to keep walking.</a></p>
+            </div>
+        </div>
 
+        <!-- Picked up wallet -->
+        <div id="Pickup" class="step-slide">
+            <div class="slide-tet">
+                <p></p>
+            </div>
+        </div>
+
+    </div>
+    <!-- Javascript Section-->
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
 </body>
 </html>
