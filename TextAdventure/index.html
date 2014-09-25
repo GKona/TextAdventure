@@ -19,10 +19,12 @@
                 <p id="centercontrol"><a href="#intro">Lets begin!</a></p>
             </div>
         </div>
+        <!-- Tier 1 -->
         <!-- Intro -->
         <div id="intro" class="step slide" data-y="1500">
             <div class="slide-text">
-                <p>You are walking down a street all by your lonesome.<br />
+                <p>
+                    You are walking down a street all by your lonesome.<br />
                     It occurs to you that you've forgotten where you were going in the first place.
                     As you stand there seemingly brain dead, you notice a wallet before your feet.
                     The streets appear earily silent as you scan your surrounding for the owner of the wallet and or cops.
@@ -39,20 +41,178 @@
             </div>
         </div>
 
+        <!-- Tier 2 -->
         <!-- Didn't pick up wallet -->
         <div id="dontPickup" class="step slide" data-y="1500" data-x="1500">
             <div class="slide-text">
                 <p>You just washed your hands so you decide to move along... CRASH!</p>
-                <img src="res/Piano.gif" width="500px"/> 
-                <p id="centerControl"><a href="#gameover">Game Over</a></p>              
+                <img src="res/Piano.gif" width="500px" />
+                <p id="centerControl"><a href="#gameover">Game Over</a></p>
             </div>
         </div>
-
+        <!-- Tier 2 -->
         <!-- Picked up wallet -->
         <div id="pickup" class="step slide" data-y="1500" data-x="-1500">
             <div class="slide-text">
-                    <p>Sample sample sample sample</p>
-                    <p><a href="#gameover">Game Over</a></p>
+                <p>Picked up wallet slide</p>
+                <p id="centerControl"><a href="#cashSearch">Look for cash</a></p>
+                <p id="centerControl"><a href="#idSearch">Look for ID</a></p>  
+                <p id="centerControl"><a href="#takeToPolice">Take wallet to the police</a></p>  
+            </div>
+        </div>
+
+        <!-- Tier 3 -->
+        <!-- Look For Cash -->
+        <div id="cashSearch" class="step slide">
+            <div class="slide-text">
+                <p id="centerControl"><a href="#cashSearch">Look for cash</a></p>
+                <p id="centerControl"><a href="#idSearch">Look for ID</a></p>  
+            </div>
+        </div>
+        <!-- Tier 3 -->
+        <!-- Look For ID -->
+        <div id="idSearch" class="step slide">
+            <div class="slide-text">
+                <p>Look for ID slide</p>
+                <p id="centerControl"><a href="#cashSearch">Look for cash</a></p>
+                <p id="centerControl"><a href="#idSearch">Look for ID</a></p>   
+            </div>
+        </div>
+        <!-- Tier 3 -->
+        <!-- Take wallet to police -->
+        <div id="takeToPolice" class="step slide">
+            <div class="slide-text">
+                <p>Took wallet to poilice slide</p>
+                <p><a href="#gameover">Game Over</a></p>
+            </div>
+        </div>
+
+        <!-- Tier 4 --> <!-- DEATH!!! -->
+        <!-- Follow signs to civilization -->
+        <div id="followCiv" class="step slide">
+            <div class="slide-text">
+                <p>Follow signs to civilization slide</p>
+                <p id="centerControl"><a href="#cashSearch">Look for cash</a></p>
+                <p id="centerControl"><a href="#idSearch">Look for ID</a></p>  
+            </div>
+        </div>
+        <!-- Tier 4 -->
+        <!-- Head away from civilization -->
+        <div id="leaveCiv" class="step slide">
+            <div class="slide-text">
+                <p>Travel opposite of civilization slide</p>
+                <p><a href="#gameover">Game Over</a></p>
+            </div>
+        </div>
+        <!-- Tier 4 -->
+        <!-- Head away from civilization -->
+        <div id="leaveCiv" class="step slide">
+            <div class="slide-text">
+                <p>Travel opposite of civilization slide</p>
+                <p><a href="#gameover">Game Over</a></p>
+            </div>
+        </div>
+        <!-- Tier 4 -->
+        <!-- Get Mugged -->
+        <div id="mugged" class="step slide">
+            <div class="slide-text">
+                <p>Mugged on te way to police slide</p>
+            </div>
+        </div>
+
+        <!-- Tier 5 --> <!-- DEATH!!! -->
+        <!-- Approach Alien -->
+        <div id="approachAlien" class="step slide">
+            <div class="slide-text">
+                <p>Approach humanoid alien slide</p>
+            </div>
+        </div>
+
+        <!-- Tier 5 -->
+        <!-- Kill Alien -->
+        <div id="killAlien" class="step slide">
+            <div class="slide-text">
+                <p>Kill humanoid alien slide</p>
+            </div>
+        </div>
+
+        <!-- Tier 5 -->
+        <!-- Fight mugger -->
+        <div id="fightMugger" class="step slide">
+            <div class="slide-text">
+                <p>Fight the mugger slide</p>
+            </div>
+        </div>
+
+        <!-- Tier 5 --> <!-- DEATH!!! -->
+        <!-- Give wallet to mugger -->
+        <div id="giveWallet" class="step slide">
+            <div class="slide-text">
+                <p>Give wallet to mugger slide</p>
+            </div>
+        </div>
+
+        <!-- Tier 6 --> <!-- DEATH!!! -->
+        <!-- Dress as alien -->
+        <div id="disguise" class="step slide">
+            <div class="slide-text">
+                <p>Disguise yourself as humanoid alien slide</p>
+            </div>
+        </div>
+
+        <!-- Tier 6 -->
+        <!-- Stand your ground -->
+        <div id="standGround" class="step slide">
+            <div class="slide-text">
+                <p>Stand your ground against the aliens slide</p>
+            </div>
+        </div>
+
+        <!-- Tier 6 --> <!-- DEATH!!! -->
+        <!-- Get upper hand in hobo fight -->
+        <div id="finishHim" class="step slide">
+            <div class="slide-text">
+                <p>Get upper hand in hobo fight slide</p>
+            </div>
+        </div>
+
+        <!-- Tier 6 --> <!-- DEATH!!! -->
+        <!-- Mugger wins -->
+        <div id="muggerwins" class="step slide">
+            <div class="slide-text">
+                <p>Mugger wins the fight slide</p>
+            </div>
+        </div>
+
+        <!-- Tier 7 --> <!-- DEATH!!! -->
+        <!-- Take ship -->
+        <div id="spaceship" class="step slide">
+            <div class="slide-text">
+                <p>Take spaceship back home slide</p>
+            </div>
+        </div>
+
+        <!-- Tier 7 --> <!-- DEATH!!! -->
+        <!-- Stay on planet -->
+        <div id="settle" class="step slide">
+            <div class="slide-text">
+                <p>Stay on alien planet slide</p>
+            </div>
+        </div>
+
+        <!-- Tier 8 --> <!-- WIN!!! -->
+        <!-- Piano time -->
+        <div id="pianoWin" class="step slide">
+            <div class="slide-text">
+                <p>Go home and play piano slide</p>
+            </div>
+        </div>
+
+        <!-- Tier 8 --> <!-- DEATH!!! -->
+        <!-- Insanity -->
+        <div id="insanity" class="step slide">
+            <div class="slide-text">
+                <p>You lose your mind when you get back to earth slide</p>
             </div>
         </div>
 
