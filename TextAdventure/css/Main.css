@@ -75,5 +75,6 @@ div.menu {
 }
 
 #centerControl {
-
+    text-align: center;
+    margin:auto;
 }
