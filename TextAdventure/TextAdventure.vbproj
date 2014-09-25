@@ -88,6 +88,7 @@
     <Content Include="js\impress.js" />
     <Content Include="res\Loading.gif" />
     <Content Include="res\Pacman.gif" />
+    <Content Include="res\Piano.gif" />
     <Content Include="res\SamuraiJack.gif" />
     <Content Include="Web.config" />
   </ItemGroup>

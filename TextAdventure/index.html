@@ -9,58 +9,62 @@
 <body>
     <div id="impress">
         <!-- Title Screen-->
-        <div id="TitleScreen" class="step slide" data-y="-1500">
+        <div id="title" class="step slide">
             <div class="slide-text">
                 <h1>Text Adventure (Placeholder)</h1>
                 <p>The objective of this... wondrous adventure is to make it to the end (go figure) by overcoming all the obstacles (reading) put in your way.</p>
-                <p>Battle the mythical beasts of greek mythology (suspect to change) and explore new realms of uncomprehensible horror (.. ...BOO!).</p>
+                <p>Battle the mythical beasts of greek mythology (suspect to change) and explore new realms of uncomprehensible horror.</p>
                 <p>Delve deep into your mind, soul, and gun box and gather up the courage to face what lies behind... The Scary Door.</p>
-                <p></p>
-                <p>
-                    And remember, the secret is believing in yourself... <br />
-                    and not dying, that's bad.
+                <p>And remember, the secret is believing in yourself... <br /> and not dying, that's bad.</p>
+                <p id="centercontrol"><a href="#intro">Lets begin!</a></p>
+            </div>
+        </div>
+        <!-- Intro -->
+        <div id="intro" class="step slide" data-y="1500">
+            <div class="slide-text">
+                <p>You are walking down a street all by your lonesome.<br />
+                    It occurs to you that you've forgotten where you were going in the first place.
+                    As you stand there seemingly brain dead, you notice a wallet before your feet.
+                    The streets appear earily silent as you scan your surrounding for the owner of the wallet and or cops.
+                    <br />
+                    ..."Pick it up already!", the thought echoes in your mind over and over again,
+                    as if a greater power is attempting to pass great wisdom directly to you...
                 </p>
-                <h2><a href="#Intro">Lets begin!</a></h2>
-                <br />
-                <h2><a href="#GameOver">Game Over!</a></h2>
+                <hr /><br />
+                <p><a href="#pickup">You decide to pick the wallet up off the ground.</a></p>
+                <h1>-OR-</h1>
+                <p><a href="#dontPickup">You ignor the clear signs from the universe and decide to keep walking.</a></p>
+                <hr /><br />
+                <p><a href="#title">Retreat!</a></p>
             </div>
         </div>
 
-        <!-- Intro -->
-        <div id="Intro" class="step slide">
+        <!-- Didn't pick up wallet -->
+        <div id="dontPickup" class="step slide" data-y="1500" data-x="1500">
             <div class="slide-text">
-                <p class="slide-body">You are walking down a street all by your lonesome.<br />
-                It occurs to you that you've forgotten where you were going in the first place.
-                As you stand there seemingly brain dead, you notice a wallet before your feet. 
-                The streets appear earily silent as you scan your surrounding for the owner of the wallet and or cops.
-                <br />
-                ..."Pick it up already!", the thought echoes in your mind over and over again, 
-                as if a greater power is attempting to pass great wisdom directly to you...
-                </p>
-                <hr /><br />
-                <p><a href="#Pickup">You decide to pick the wallet up off the ground.</a></p>
-                <p>-OR-</p>
-                <p><a href="#DontPickup">You ignor the clear signs from the universe and decide to keep walking.</a></p>
-                <hr /><br />
-                <p><a href="#TitleScreen">Retreat!</a></p>
+                <p>You just washed your hands so you decide to move along... CRASH!</p>
+                <img src="res/Piano.gif" width="500px"/> 
+                <p id="centerControl"><a href="#gameover">Game Over</a></p>              
             </div>
         </div>
 
         <!-- Picked up wallet -->
-        <div id="Pickup" class="step slide">
+        <div id="pickup" class="step slide" data-y="1500" data-x="-1500">
             <div class="slide-text">
-                <p></p>
+                    <p>Sample sample sample sample</p>
+                    <p><a href="#gameover">Game Over</a></p>
             </div>
         </div>
 
-
         <!-- Game Over -->
-        <div id="GameOver" class="step slide">
-            <div class="slide-text">
-                <h1>GAME OVER!</h1>
+        <div id="gameover" class="step slide" data-z="-1" data-y="3000" data-x="1500">
+            <div class="menu">
+                <div style="text-align:center">
+                    <h1>GAME OVER!</h1>
+                </div>
                 <hr /><br />
-                <img src="res/Pacman.gif" />
-                <p><a href="#TitleScreen">Initiate reboot sequence something something smart!</a></p>
+                <img src="res/Pacman.gif" width="300px" />
+                <p><a href="#title">Initiate reboot sequence something something smart!</a></p>
             </div>
         </div>
 
