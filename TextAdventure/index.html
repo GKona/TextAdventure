@@ -14,7 +14,7 @@
 </head>
 <body>
     <div id="impress">
-        <!-- Flash Screen -->
+        <!-- Flash Screen --> <!--DONE!-->
         <div id="flash" class="step slide">
             <div class="slide-text">
                 <h1 id="centerControl" style="color:red; font-weight:bold; font-size:30px; margin-bottom:15px;">Geri Kona Productions</h1>
@@ -23,13 +23,12 @@
             </div>
         </div>
 
-        <!-- Title Screen-->
+        <!-- Title Screen--> <!--DONE!-->
         <div id="title" class="step slide" data-y="-1500">
             <div class="slide-text">
                 <h1 id="centerControl" style="color:red; font-weight:bold; font-size:30px;">Life On The Streets</h1>
                 <h2 id="centerControl" style="font-style:italic; font-weight:bold; padding-top:5px;">By: Geri Kona</h2>
-                <p>The objective of this... wondrous adventure is to make it to the end (go figure) by overcoming all the obstacles (reading) put in your way.</p>
-                <p>Battle the mythical beasts of greek mythology (suspect to change) and explore new realms of uncomprehensible horror.</p>
+                <p>The objective of this... wondrous adventure is to make it to the end (go figure) by overcoming all the obstacles (reading) on your path.</p>
                 <p>Delve deep into your mind, soul, and gun box and gather up the courage to face what lies behind... The Scary Door.</p>
                 <p>And remember, the secret is believing in yourself... <br /> and not dying, that's bad.</p>
                 <img src="res/Loading.gif" width="200px" style="margin-left:250px;" /><br /><br />
@@ -38,15 +37,16 @@
         </div>
 
         <!-- Tier 1 -->
-        <!-- Intro -->
+        <!-- Intro --> <!--DONE!-->
         <div id="intro" class="step slide" data-y="1500">
             <div class="slide-text">
                 <p>
                     You are walking down a street all by your lonesome.<br />
                     It occurs to you that you've forgotten where you were going in the first place.
-                    As you stand there seemingly brain dead, you notice a wallet before your feet.
-                    The streets appear earily silent as you scan your surrounding for the owner of the wallet and or cops.
-                    <br />
+                    As you stand there, you notice a wallet before your feet.
+                    The streets appear earily silent as you scan your surrounding for the owner of the wallet or police officers.
+                </p>
+                <p>
                     ..."Pick it up already!", the thought echoes in your mind over and over again,
                     as if a greater power is attempting to pass great wisdom directly to you...
                 </p>
@@ -59,7 +59,7 @@
         </div>
 
         <!-- Tier 2 --> <!-- DEATH!!! -->
-        <!-- Didn't pick up wallet -->
+        <!-- Didn't pick up wallet --> <!--DONE!-->
         <div id="dontPickup" class="step slide" data-y="1500" data-x="1500">
             <div class="slide-text">
                 <p>You just washed your hands so you decide to move along... CRASH!</p>
@@ -69,10 +69,10 @@
             </div>
         </div>
         <!-- Tier 2 -->
-        <!-- Picked up wallet -->
+        <!-- Picked up wallet --> <!--DONE!-->
         <div id="pickup" class="step slide" data-y="1500" data-x="-1500">
             <div class="slide-text">
-                <p>With the wallet in your hands, you are frozen in silence. There so many possibilities in front of you... What's your next step?</p>
+                <p>With the wallet in your hands, you are frozen in silence. There are simply infinte possibilities in front of you... What's your next step?</p>
                 <hr id="bar" />
                 <p><a href="#takeToPolice">Take the wallet to a nearby police station.</a></p>
                 <p><a href="#cashSearch">Look for cash.</a></p>
@@ -83,10 +83,11 @@
         </div>
 
         <!-- Tier 3 -->
-        <!-- Take wallet to police -->
+        <!-- Take wallet to police --> <!--DONE!-->
         <div id="takeToPolice" class="step slide" data-y="1500" data-x="-3000">
             <div class="slide-text">
                 <p>Being a good samaritan and all, you decide to take the lost wallet to a nearby police station.</p>
+                <hr id="bar" />
                 <p><a href="#mugged">Walk to the police station.</a></p>
                 <p><a href="#cab">Take a cab to the police station.</a></p>
                 <hr id="bar" />
@@ -116,10 +117,13 @@
             </div>
         </div>
         <!-- Tier 3 -->
-        <!-- Look For ID -->
+        <!-- Look For ID --> <!--DONE!-->
         <div id="idSearch" class="step slide" data-y="3000" data-x="-1500">
             <div class="slide-text">
-                <p>You rummage through the wallet looking for anything to identify the wallet's owner. Sadly, there isnt one piece of id.</p>
+                <p>
+                    You rummage through the wallet looking for anything to identify the wallet's owner.
+                    Sadly, there isnt a single piece of identification.
+                </p>
                 <hr id="bar" />
                 <p><a href="#takeToPolice">Take the wallet to a nearby police station.</a></p>
                 <p><a href="#cashSearch">Look for cash.</a></p>
@@ -129,31 +133,32 @@
         </div>
 
         <!-- Tier 4 -->
-        <!-- Get Mugged -->
+        <!-- Get Mugged --> <!--DONE!-->
         <div id="mugged" class="step slide" data-y="1500" data-x="-4500">
             <div class="slide-text">
                 <p>
-                    You walk for about 10 minutes before you are confronted by a shaddy looking man.
+                    You walk for about 10 minutes before you are confronted by a shaddy looking fellow.
                     He pulls out a blade from his pocket and demands you hand over your money.
                 </p>
                 <hr id="bar" />
-                <p><a href="#fightMugger">You ain't nobody's... prey. You stand your ground.</a></p>
+                <p><a href="#fightMugger">You ain't nobody's... victim. Stand your ground!</a></p>
                 <p><a href="#giveWallet">Give him the wallet you found.</a></p>
                 <hr id="bar" />
                 <p><a href="#takeToPolice">Retreat!</a></p>
             </div>
         </div>
         <!-- Tier 4 --> <!-- DEATH!!! -->
-        <!-- Cab -->
+        <!-- Cab --> <!--DONE!-->
         <div id="cab" class="step slide" data-y="3000" data-x="-3000">
             <div class="slide-text">
                 <p>
-                    You fall asleep on the ride over to the police station. You wake up to a sharp tingling pain in your gut.
-                    You see a large gash on your stomach and blood splattered all over the inside of the cab.<br />
+                    You fall asleep on the ride over to the police station.<br />
+                    As you wake up, you feel a sharp tingling pain in your gut.
+                    You see a large gash on your stomach and blood splattered all over the interior of the cab.
                     You die shortly after.
                 </p>
                 <hr id="bar" />
-                <p><a href="#gameover">Game Over!</a></p>
+                <p id="centerControl"><a href="#gameover">Game Over!</a></p>
             </div>
         </div>
         <!-- Tier 4 --> <!-- DEATH!!! -->
@@ -224,11 +229,11 @@
         </div>
 
         <!-- Tier 5 -->
-        <!-- Fight mugger -->
+        <!-- Fight mugger --> <!--DONE!-->
         <div id="fightMugger" class="step slide" data-y="3000" data-x="-4500">
             <div class="slide-text">
                 <p>
-                    You stand your ground and politely ask the stranges you mind his own business.
+                    You stand your ground and politely ask the stranges to mind his own business.
                     He blanky stares at your for a couple of seconds... "Hand over your money or die!"
                 </p>
                 <hr id="bar" />
@@ -240,12 +245,12 @@
         </div>
 
         <!-- Tier 5 --> <!-- DEATH!!! -->
-        <!-- Give wallet to mugger -->
+        <!-- Give wallet to mugger --> <!--DONE!-->
         <div id="giveWallet" class="step slide" data-y="1500" data-x="-6000">
             <div class="slide-text">
                 <p>
                     You hand over the wallet to the mugger and he stabs you between the ribs before running down an alley.
-                    The wound dowsnt seem too bad so you'll be alright as long as you get some medical atten.. CRASH!
+                    The wound dosn't seem too bad so you'll be alright as long as you get some medical atten.. CRASH!
                 </p>
                 <img src="res/Piano.gif" width="500px" style="margin-left:100px;" /> <br>
                 <hr id="bar" />
@@ -294,17 +299,20 @@
         </div>
 
         <!-- Tier 6 --> <!-- DEATH!!! -->
-        <!-- Get upper hand in hobo fight -->
+        <!-- React to attacker --> <!--DONE!-->
         <div id="defend" class="step slide" data-y="3000" data-x="-6000">
             <div class="slide-text">
                 <p>
-                    Due to your superior athleticism you react to the mugger's strikes and are abble to apprehend him.
+                    Due to your superior athleticism you counter the mugger's strikes and are able to apprehend him with ease.
                     Your scuffle has attracted the attention of a couple of police officers.
-                    Before you get a chance to speak, the officers demand you place your hands behind your head and step away from the man on the ground. You try to explain that the man was trying to mug you but the officers only get more aggresive. You slowly reach in your back pocket to retreive the wallet you found meanwhile stating your intentions to the officers.
+                    Before you get a chance to speak, the officers demand you place your hands behind your head and step away from the man on the ground.
+                </p>
+                <p>
+                    You try to explain that the man was trying to mug you but the officers only get more aggresive. You slowly reach into your back pocket to retreive the wallet you found while stating your intentions to the officers.
                     They believe you to be reaching for a weapon and they shoot without warning.
                 </p>
                 <p>
-                    You lie there bleeding on the ground with the wallet in your hand.
+                    You lie there bleeding on the ground with the wallet still in your hand and a bullet in the head.
                 </p>
                 <hr id="bar" />
                 <p id="centerControl"><a href="#gameover">Game Over</a></p>
@@ -312,11 +320,11 @@
         </div>
 
         <!-- Tier 6 --> <!-- DEATH!!! -->
-        <!-- Mugger wins -->
+        <!-- Rush Mugger --> <!--DONE!-->
         <div id="initiateFight" class="step slide" data-y="4500" data-x="-4500">
             <div class="slide-text">
                 <p>
-                    You attempt to rush the mugger and catch him by surprise, but instead trip and land face first on him blade.
+                    You attempt to rush the mugger and catch him by surprise, but you trip and land face first on him blade.
                 </p>
                 <hr id="bar" />
                 <p id="centerControl"><a href="#gameover">Game Over</a></p>
