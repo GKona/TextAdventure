@@ -90,6 +90,7 @@
     <Content Include="res\Logo.jpg" />
     <Content Include="res\Pacman.gif" />
     <Content Include="res\Piano.gif" />
+    <Content Include="res\Win.gif" />
     <Content Include="res\SamuraiJack.gif" />
     <Content Include="Web.config" />
   </ItemGroup>

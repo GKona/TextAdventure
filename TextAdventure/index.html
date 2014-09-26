@@ -35,6 +35,7 @@
                 <p id="centerControl"><a href="#intro">Lets begin!</a></p>
             </div>
         </div>
+
         <!-- Tier 1 -->
         <!-- Intro -->
         <div id="intro" class="step slide" data-y="1500">
@@ -86,7 +87,7 @@
             <div class="slide-text">
                 <p>Being a good samaritan and all, you decide to take the lost wallet to a nearby police station.</p>
                 <p><a href="#mugged">Walk to the police station.</a></p>
-                <p><a href="#police">Take a cab to the police station.</a></p>
+                <p><a href="#cab">Take a cab to the police station.</a></p>
                 <hr id="bar" />
                 <p><a href="#pickup">Retreat!</a></p>
             </div>
@@ -128,17 +129,30 @@
 
         <!-- Tier 4 -->
         <!-- Get Mugged -->
-        <div id="mugged" class="step slide">
+        <div id="mugged" class="step slide" data-y="1500" data-x="-4500">
             <div class="slide-text">
-                <p>Mugged on te way to police slide</p>
+                <p>
+                    You walk for about 10 minutes before you are confronted by a shaddy looking man.
+                    He pulls out a blade from his pocket and demands you hand over your money.
+                </p>
+                <hr id="bar" />
+                <p><a href="#fightMugger">You ain't nobody's... prey. You stand your ground.</a></p>
+                <p><a href="#giveWallet">Give him the wallet you found.</a></p>
+                <hr id="bar" />
+                <p><a href="#takeToPolice">Retreat!</a></p>
             </div>
         </div>
         <!-- Tier 4 --> <!-- DEATH!!! -->
         <!-- Cab -->
-        <div id="cab" class="step slide">
+        <div id="cab" class="step slide" data-y="3000" data-x="-3000">
             <div class="slide-text">
-                <p>Get mistaken for a suspect and get shot by police</p>
+                <p>
+                    You fall asleep on the ride over to the police station. You wake up to a sharp tingling pain in your gut.
+                    You see a large gash on your stomach and blood splattered all over the inside of the cab.<br />
+                    You die shortly after.
+                </p>
                 <hr id="bar" />
+                <p><a href="#gameover">Game Over!</a></p>
             </div>
         </div>
         <!-- Tier 4 --> <!-- DEATH!!! -->
@@ -210,17 +224,31 @@
 
         <!-- Tier 5 -->
         <!-- Fight mugger -->
-        <div id="fightMugger" class="step slide">
+        <div id="fightMugger" class="step slide" data-y="3000" data-x="-4500">
             <div class="slide-text">
-                <p>Fight the mugger slide</p>
+                <p>
+                    You stand your ground and politely ask the stranges you mind his own business.
+                    He blanky stares at your for a couple of seconds... "Hand over your money or die!"
+                </p>
+                <hr id="bar" />
+                <p><a href="#initiateFight">Rush him!</a></p>
+                <p><a href="#defend">Wait for him to act first.</a></p>
+                <hr id="bar" />
+                <p><a href="#mugged">Retreat!</a></p>
             </div>
         </div>
 
         <!-- Tier 5 --> <!-- DEATH!!! -->
         <!-- Give wallet to mugger -->
-        <div id="giveWallet" class="step slide">
+        <div id="giveWallet" class="step slide" data-y="1500" data-x="-6000">
             <div class="slide-text">
-                <p>Give wallet to mugger slide</p>
+                <p>
+                    You hand over the wallet to the mugger and he stabs you between the ribs before running down an alley.
+                    The wound dowsnt seem too bad so you'll be alright as long as you get some medical atten.. CRASH!
+                </p>
+                <img src="res/Piano.gif" width="500px" style="margin-left:100px;" /> <br>
+                <hr id="bar" />
+                <p id="centerControl"><a href="#gameover">Game Over</a></p>
             </div>
         </div>
 
@@ -258,7 +286,7 @@
                 <hr id="bar" />
                 <p><a href="#settle">Stay on the planet.</a></p>
                 <p><a href="#spaceship">Request to take a spaceship back to your planet.</a></p>
-                <p><a href="#teleport">Present Wallet to alien ambasador.</a></p>
+                <p><a href="#teleport">Present Wallet to alien ambassador.</a></p>
                 <hr id="bar" />
                 <p><a href="#killAlien">Retreat!</a></p>
             </div>
@@ -266,17 +294,21 @@
 
         <!-- Tier 6 --> <!-- DEATH!!! -->
         <!-- Get upper hand in hobo fight -->
-        <div id="finishHim" class="step slide">
+        <div id="defend" class="step slide" data-y="3000" data-x="-6000">
             <div class="slide-text">
                 <p>Get upper hand in hobo fight slide</p>
+                <hr id="bar" />
+                <p id="centerControl"><a href="#gameover">Game Over</a></p>
             </div>
         </div>
 
         <!-- Tier 6 --> <!-- DEATH!!! -->
         <!-- Mugger wins -->
-        <div id="muggerwins" class="step slide">
+        <div id="initiateFight" class="step slide" data-y="4500" data-x="-4500">
             <div class="slide-text">
                 <p>Mugger wins the fight slide</p>
+                <hr id="bar" />
+                <p id="centerControl"><a href="#gameover">Game Over</a></p>
             </div>
         </div>
 
@@ -295,41 +327,89 @@
         </div>
         <!-- Tier 7 --> <!-- DEATH!!! -->
         <!-- Stay on planet -->
-        <div id="settle" class="step slide">
+        <div id="settle" class="step slide" data-y="5500" data-x="4500">
             <div class="slide-text">
-                <p>Stay on alien planet slide</p>
+                <p>
+                    You decide to take advantage of such an incredible oppurtunity and establish a new life on this new planet.
+                    The natives take a liking to you and fit right in. It doesnt take long for you to become a fully fledged member of this new society.
+                </p>
+                <p>
+                    Although being the only human on an entire planet has it's drawback, they native women see you as an exotic foreign species... *wink* *wink*
+                </p>
+                <p>
+                    You die within a week from a severe case of space herpes.
+                </p>
+                <hr id="bar" />
+                <p id="centerControl"><a href="#gameover">Game Over</a></p>
             </div>
         </div>
         <!-- Tier 7 -->
         <!-- Teleport Home -->
-        <div id="teleport" class="step slide">
+        <div id="teleport" class="step slide" data-y="5500" data-x="3000">
             <div class="slide-text">
-                <p>teleport home slide</p>
+                <p>
+                    The alien ambassador immediately recognizes the wallet as a disquised teleporter.
+                    Within minutes, your transport is ready.
+                </p>
+                <p>
+                    Once back home, you reflect on all the past few days and if it really just happened.
+                    Can you go back to living a normal life? Can you even speak about what you've experienced?
+                    what will people say and will they even believe you?
+                </p>
+
+                <hr id="bar" />
+                <p><a href="#pianoWin">Go home!</a></p>
+                <p><a href="#insanity">Share your adventure with the world.</a></p>
+                <hr id="bar" />
+                <p><a href="#standGround">Retreat!</a></p>
             </div>
         </div>
 
         <!-- Tier 8 --> <!-- WIN!!! -->
         <!-- Piano time -->
-        <div id="pianoWin" class="step slide">
+        <div id="pianoWin" class="step slide" data-y="7000" data-x="1500">
             <div class="slide-text">
-                <p>Go home and play piano slide</p>
+                <p>
+                    You finally make it back home in one piece. Your mind still racing, you take a moment to sit down and play a song on your piano to calm your nerves...
+                </p>
+                <p>
+                    You may not know what to do next but one thing is certain. No matter what troubles you face, you can always come home to your piano and feel at peace.
+                </p>
+                <hr id="bar" />
+                <p><a href="#win">YAY!</a></p>
             </div>
         </div>
 
         <!-- Tier 8 --> <!-- DEATH!!! -->
         <!-- Insanity -->
-        <div id="insanity" class="step slide">
+        <div id="insanity" class="step slide" data-y="7000" data-x="4500">
             <div class="slide-text">
-                <p>You lose your mind when you get back to earth slide</p>
+                <p>
+                    You turn to your family for comfort and share your experience with them. No luck, they think your crazy and throw in a loony bin.
+                </p>
+                <p>
+                    Maybe you should have brought back a souvenir. But its too late for that, you quickly begin to lose your mind waste away.
+                </p>
+                <hr id="bar" />
+                <p id="centerControl"><a href="#gameover">Game Over</a></p>
             </div>
         </div>
 
         <!-- Game Over -->
-        <div id="gameover" class="step slide" data-z="-1" data-y="3000" data-x="1500">
+        <div id="gameover" class="step slide" data-y="10000">
             <div class="menu">
                 <h1 id="centercontrol">GAME OVER!</h1>
                 <img src="res/Pacman.gif" width="300px" />
                 <p><a href="#title">Initiate reboot sequence something something smart!</a></p>
+            </div>
+        </div>
+
+        <!-- Winner Is You -->
+        <div id="win" class="step slide" data-z="-1" data-y="8000" data-x="1500">
+            <div class="menu">
+                <h1 id="centercontrol" style="color:red; font-weight:bold; font-size:30px; margin-bottom:20px;">Congratulations!</h1>
+                <img src="res/Win.gif" width="600px" />
+                <p><a href="#title">Give it another go why dont you?</a></p>
             </div>
         </div>
 
