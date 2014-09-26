@@ -1,17 +1,32 @@
 ﻿<!DOCTYPE html>
+<!--    "Text Adventure""
+    Geri Kona
+    Last Modified by: Geri Kona
+    Date Last Modified: September 26th, 2014.
+    Revision History - - -
+-->
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title>Working Title!</title>
+    <title>Life On The Streets!</title>
     <link href="css/Reset.css" rel="stylesheet" />
     <link href="css/Main.css" rel="stylesheet" />
 </head>
 <body>
     <div id="impress">
+        <!-- Flash Screen -->
+        <!--
+        <div id="flash" class="step slide">
+            <div class="slide-text">
+                <img src="res/Logo.jpg" width="500px" style="margin-left:250px;" /><br /><br />
+                <p id="centerControl"><a href="#title">Start The Fun!</a></p>
+            </div>
+        </div>-->
         <!-- Title Screen-->
         <div id="title" class="step slide">
             <div class="slide-text">
-                <h1 id="centerControl">Text Adventure (Placeholder)</h1>
+                <h1 id="centerControl" style="color:red; font-weight:bold; font-size:30px;">Life On The Streets</h1>
+                <h2 id="centerControl" style="font-style:italic; font-weight:bold; padding-top:5px;">By: Geri Kona</h2>
                 <p>The objective of this... wondrous adventure is to make it to the end (go figure) by overcoming all the obstacles (reading) put in your way.</p>
                 <p>Battle the mythical beasts of greek mythology (suspect to change) and explore new realms of uncomprehensible horror.</p>
                 <p>Delve deep into your mind, soul, and gun box and gather up the courage to face what lies behind... The Scary Door.</p>
@@ -24,7 +39,8 @@
         <!-- Intro -->
         <div id="intro" class="step slide" data-y="1500">
             <div class="slide-text">
-                <p> You are walking down a street all by your lonesome.<br />
+                <p>
+                    You are walking down a street all by your lonesome.<br />
                     It occurs to you that you've forgotten where you were going in the first place.
                     As you stand there seemingly brain dead, you notice a wallet before your feet.
                     The streets appear earily silent as you scan your surrounding for the owner of the wallet and or cops.
@@ -32,21 +48,21 @@
                     ..."Pick it up already!", the thought echoes in your mind over and over again,
                     as if a greater power is attempting to pass great wisdom directly to you...
                 </p>
-                <hr /><br />
+                <hr id="bar" />
                 <p><a href="#pickup">You decide to pick the wallet up off the ground.</a></p>
-                <h3>-OR-</h3><br />
-                <p><a href="#dontPickup">You ignor the clear signs from the universe and decide to keep walking.</a></p>
-                <hr /><br />
+                <p><a href="#dontPickup">You ignor the clear signs from the universe and continue walking.</a></p>
+                <hr id="bar" />
                 <p><a href="#title">Retreat!</a></p>
             </div>
         </div>
 
-        <!-- Tier 2 -->
+        <!-- Tier 2 --> <!-- DEATH!!! -->
         <!-- Didn't pick up wallet -->
         <div id="dontPickup" class="step slide" data-y="1500" data-x="1500">
             <div class="slide-text">
                 <p>You just washed your hands so you decide to move along... CRASH!</p>
-                <img src="res/Piano.gif" width="500px" />
+                <img src="res/Piano.gif" width="500px" style="margin-left:100px;" /> <br>
+                <hr id="bar" />
                 <p id="centerControl"><a href="#gameover">Game Over</a></p>
             </div>
         </div>
@@ -54,10 +70,13 @@
         <!-- Picked up wallet -->
         <div id="pickup" class="step slide" data-y="1500" data-x="-1500">
             <div class="slide-text">
-                <p>Picked up wallet slide</p>
-                <p id="centerControl"><a href="#takeToPolice">Take wallet to the police</a></p>
-                <p id="centerControl"><a href="#cashSearch">Look for cash</a></p>
-                <p id="centerControl"><a href="#idSearch">Look for ID</a></p>
+                <p>With the wallet in your hands, you are frozen in silence. There so many possibilities in front of you... What's your next step?</p>
+                <hr id="bar" />
+                <p><a href="#takeToPolice">Take the wallet to a nearby police station.</a></p>
+                <p><a href="#cashSearch">Look for cash.</a></p>
+                <p><a href="#idSearch">Look for ID.</a></p>
+                <hr id="bar" />
+                <p><a href="#intro">Retreat!</a></p>
             </div>
         </div>
 
@@ -65,24 +84,45 @@
         <!-- Take wallet to police -->
         <div id="takeToPolice" class="step slide" data-y="1500" data-x="-3000">
             <div class="slide-text">
-                <p>Took wallet to poilice slide</p>
-                <p><a href="#mugged">Take shortcut to the police station</a></p>
-                <p><a href="#police">Take long way to police station</a></p>
+                <p>Being a good samaritan and all, you decide to take the lost wallet to a nearby police station.</p>
+                <p><a href="#mugged">Walk to the police station.</a></p>
+                <p><a href="#police">Take a cab to the police station.</a></p>
+                <hr id="bar" />
+                <p><a href="#pickup">Retreat!</a></p>
             </div>
         </div>
         <!-- Tier 3 -->
         <!-- Look For Cash -->
-        <div id="cashSearch" class="step slide" data-y="3000" data-x="-3000">
+        <div id="cashSearch" class="step slide" data-y="3000">
             <div class="slide-text">
+                <p>
+                    You decide to test your luck and peek into the wallet for any loose bills. Suddenly, you feel a strange darkness settle around you.
+                    Looking back at the wallet you see a mesmerizing glow that trappes your attention and stuns you in place.
+                </p>
+                <p>
+                    As the light fades you wonder to youself what you just experienced, and thats when you finally get a sense of your surroundings.
+                    No longer standing on a city sidewalk, you find yourself in a completely unrecognizable environment. <br />
+                </p>
+                <p>
+                    You notice off in the distance a cluster of strangly shaped structures surounded by nothing but sand and rocks. Not much sense in standing in place so you think to yourself...
+                </p>
+                <hr id="bar" />
+                <p><a href="#followCiv">Begin walking towards signs of civilization.</a></p>
+                <p><a href="#leaveCiv">Head off in opposite direction of civilization.</a></p>
+                <hr id="bar" />
+                <p><a href="#pickup">Retreat!</a></p>
             </div>
         </div>
         <!-- Tier 3 -->
         <!-- Look For ID -->
         <div id="idSearch" class="step slide" data-y="3000" data-x="-1500">
             <div class="slide-text">
-                <p>Look for ID slide</p>
-                <p id="centerControl"><a href="#cashSearch">Look for cash</a></p>
-                <p id="centerControl"><a href="#idSearch">Look for ID</a></p>
+                <p>You rummage through the wallet looking for anything to identify the wallet's owner. Sadly, there isnt one piece of id.</p>
+                <hr id="bar" />
+                <p><a href="#takeToPolice">Take the wallet to a nearby police station.</a></p>
+                <p><a href="#cashSearch">Look for cash.</a></p>
+                <hr id="bar" />
+                <p><a href="#pickup">Retreat!</a></p>
             </div>
         </div>
 
@@ -94,35 +134,56 @@
             </div>
         </div>
         <!-- Tier 4 --> <!-- DEATH!!! -->
-        <!-- Police Brutality -->
-        <div id="police" class="step slide">
+        <!-- Cab -->
+        <div id="cab" class="step slide">
             <div class="slide-text">
                 <p>Get mistaken for a suspect and get shot by police</p>
+                <hr id="bar" />
             </div>
         </div>
         <!-- Tier 4 --> <!-- DEATH!!! -->
         <!-- Follow signs to civilization -->
-        <div id="followCiv" class="step slide">
+        <div id="followCiv" class="step slide" data-y="4500">
             <div class="slide-text">
-                <p>Follow signs to civilization slide</p>
-                <p id="centerControl"><a href="#cashSearch">Look for cash</a></p>
-                <p id="centerControl"><a href="#idSearch">Look for ID</a></p>
+                <p>
+                    You've been walking for what seems like hours now and you dont seem to be getting that any closer,
+                    whether it be due to the searing heat cooking up your brain or just another mystery of the this strange land.
+                </p>
+                <p>
+                    Several more hours pass but you dont know how much more you can endure. To your relief,
+                    you feel the sun's rays weaken as it sets bellow the horizon and within minutes you begin to feel the chilling cold of the night.
+                    With absolutly no understanding of your surroundings and the chilling cold seeping deeper and deeper into your core, you surely wont last the night.
+                </p>
+                <hr id="bar" />
+                <p id="centerControl"><a href="#gameover">Game Over</a></p>
             </div>
         </div>
         <!-- Tier 4 -->
         <!-- Head away from civilization -->
-        <div id="leaveCiv" class="step slide">
+        <div id="leaveCiv" class="step slide" data-y="3000" data-x="1500">
             <div class="slide-text">
-                <p>Travel opposite of civilization slide</p>
-                <p><a href="#gameover">Game Over</a></p>
+                <p>It doesnt take long before you come across a figure in the distance. You cant tell much from where you stand but one thing is certain, it ain't human.</p>
+                <p>You may be a stranger in a new world but you still have the upper hand as long as it doesnt notice you.</p>
+                <hr id="bar" />
+                <p><a href="#approachAlien">Approach strange figure.</a></p>
+                <p><a href="#killAlien">Attack strange figure.</a></p>
+                <hr id="bar" />
+                <p><a href="#cashSearch">Retreat!</a></p>
             </div>
         </div>
 
         <!-- Tier 5 --> <!-- DEATH!!! -->
         <!-- Approach Alien -->
-        <div id="approachAlien" class="step slide">
+        <div id="approachAlien" class="step slide" data-y="4500" data-x="1500">
             <div class="slide-text">
-                <p>Approach humanoid alien slide</p>
+                <p>You get within a few feet of the creature and call out "Marco!"... no answer.</p>
+                <p>
+                    You get a little closer before you see it shift, now much larger than you previously thought.
+                    Before you even have a change to call out a second time it turns to you. Barely having a second to react it rushes you with incredible speed aaaand you're dead.
+                    Didn't even stand a chance.
+                </p>
+                <hr id="bar" />
+                <p id="centerControl"><a href="#gameover">Game Over</a></p>
             </div>
         </div>
 
@@ -130,7 +191,9 @@
         <!-- Kill Alien -->
         <div id="killAlien" class="step slide">
             <div class="slide-text">
-                <p>Kill humanoid alien slide</p>
+                <p></p>
+                <hr id="bar" />
+                <p><a href="#leaveCiv">Retreat!</a></p>
             </div>
         </div>
 
@@ -217,10 +280,7 @@
         <!-- Game Over -->
         <div id="gameover" class="step slide" data-z="-1" data-y="3000" data-x="1500">
             <div class="menu">
-                <div style="text-align:center">
-                    <h1>GAME OVER!</h1>
-                </div>
-                <hr /><br />
+                <h1 id="centercontrol">GAME OVER!</h1>
                 <img src="res/Pacman.gif" width="300px" />
                 <p><a href="#title">Initiate reboot sequence something something smart!</a></p>
             </div>
