@@ -15,15 +15,16 @@
 <body>
     <div id="impress">
         <!-- Flash Screen -->
-        <!--
         <div id="flash" class="step slide">
             <div class="slide-text">
-                <img src="res/Logo.jpg" width="500px" style="margin-left:250px;" /><br /><br />
+                <h1 id="centerControl" style="color:red; font-weight:bold; font-size:30px; margin-bottom:15px;">Geri Kona Productions</h1>
+                <img src="res/Logo.jpg" width="500px" style="margin-left:100px;" /><br /><br />
                 <p id="centerControl"><a href="#title">Start The Fun!</a></p>
             </div>
-        </div>-->
+        </div>
+
         <!-- Title Screen-->
-        <div id="title" class="step slide">
+        <div id="title" class="step slide" data-y="-1500">
             <div class="slide-text">
                 <h1 id="centerControl" style="color:red; font-weight:bold; font-size:30px;">Life On The Streets</h1>
                 <h2 id="centerControl" style="font-style:italic; font-weight:bold; padding-top:5px;">By: Geri Kona</h2>
@@ -296,7 +297,15 @@
         <!-- Get upper hand in hobo fight -->
         <div id="defend" class="step slide" data-y="3000" data-x="-6000">
             <div class="slide-text">
-                <p>Get upper hand in hobo fight slide</p>
+                <p>
+                    Due to your superior athleticism you react to the mugger's strikes and are abble to apprehend him.
+                    Your scuffle has attracted the attention of a couple of police officers.
+                    Before you get a chance to speak, the officers demand you place your hands behind your head and step away from the man on the ground. You try to explain that the man was trying to mug you but the officers only get more aggresive. You slowly reach in your back pocket to retreive the wallet you found meanwhile stating your intentions to the officers.
+                    They believe you to be reaching for a weapon and they shoot without warning.
+                </p>
+                <p>
+                    You lie there bleeding on the ground with the wallet in your hand.
+                </p>
                 <hr id="bar" />
                 <p id="centerControl"><a href="#gameover">Game Over</a></p>
             </div>
@@ -306,7 +315,9 @@
         <!-- Mugger wins -->
         <div id="initiateFight" class="step slide" data-y="4500" data-x="-4500">
             <div class="slide-text">
-                <p>Mugger wins the fight slide</p>
+                <p>
+                    You attempt to rush the mugger and catch him by surprise, but instead trip and land face first on him blade.
+                </p>
                 <hr id="bar" />
                 <p id="centerControl"><a href="#gameover">Game Over</a></p>
             </div>
@@ -405,7 +416,7 @@
         </div>
 
         <!-- Winner Is You -->
-        <div id="win" class="step slide" data-z="-1" data-y="8000" data-x="1500">
+        <div id="win" class="step slide" data-y="11500">
             <div class="menu">
                 <h1 id="centercontrol" style="color:red; font-weight:bold; font-size:30px; margin-bottom:20px;">Congratulations!</h1>
                 <img src="res/Win.gif" width="600px" />
