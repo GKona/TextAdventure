@@ -179,7 +179,8 @@
                 <p>You get within a few feet of the creature and call out "Marco!"... no answer.</p>
                 <p>
                     You get a little closer before you see it shift, now much larger than you previously thought.
-                    Before you even have a change to call out a second time it turns to you. Barely having a second to react it rushes you with incredible speed aaaand you're dead.
+                    Before you even have a change to call out a second time it turns to you.
+                    Barely having a second to react it rushes you with incredible speed aaaand you're dead.
                     Didn't even stand a chance.
                 </p>
                 <hr id="bar" />
@@ -189,9 +190,19 @@
 
         <!-- Tier 5 -->
         <!-- Kill Alien -->
-        <div id="killAlien" class="step slide">
+        <div id="killAlien" class="step slide" data-y="3000" data-x="3000">
             <div class="slide-text">
-                <p></p>
+                <p>
+                    You sneak up near the creature from the rear, only a few feet away. You look around and spot a sizeable stone.
+                    WHAM! BAM! thank you mam... and you've killed your very first alien. CONGRATULATIONS!!!
+                </p>
+                <p>
+                    Not much time passes before you notice incoming figures from the distance. They look similar to the creature lying dead next to you.
+                    They're closing in fast and you dont have a lot of time.
+                </p>
+                <hr id="bar" />
+                <p><a href="#disguise">Disguise yourself in the dead creature's clothing.</a></p>
+                <p><a href="#standGround">Stand your ground.</a></p>
                 <hr id="bar" />
                 <p><a href="#leaveCiv">Retreat!</a></p>
             </div>
@@ -214,18 +225,42 @@
         </div>
 
         <!-- Tier 6 --> <!-- DEATH!!! -->
-        <!-- Dress as alien -->
-        <div id="disguise" class="step slide">
+        <!-- Disguise as alien -->
+        <div id="disguise" class="step slide" data-y="3000" data-x="4500">
             <div class="slide-text">
-                <p>Disguise yourself as humanoid alien slide</p>
+                <p>
+                    You hastily tear the clothes of the still bleeding corpse on the ground and throw them over yourself.
+                    With seconds to spare, three figures approach you and without hesitation pounce on you, ferociously slashing at your flesh.
+                </p>
+                <hr id="bar" />
+                <p id="centerControl"><a href="#gameover">Game Over</a></p>
             </div>
         </div>
 
         <!-- Tier 6 -->
         <!-- Stand your ground -->
-        <div id="standGround" class="step slide">
+        <div id="standGround" class="step slide" data-y="4500" data-x="3000">
             <div class="slide-text">
-                <p>Stand your ground against the aliens slide</p>
+                <p>
+                    You await the incoming forces not knowing what your fate has in store for you next.
+                    As they approach you, one of them glances over at the battered corpse next to you.
+                    You spot another one of them keeping their distance and speaking an unknown tungue to the others.
+                    At that instance you feel a sharp sting travel through your spine and you collapse to the ground.
+                </p>
+                <p>
+                    You awake in a hazy state with in a brightly illuminated room with yet another alien creature standing before you.
+                    Before you have a chance to react the creature lurches over and begins to emit a flashing light from its cranium.
+                    Within a flash, you feel a surge of information rush through your mind. The alien creature enlightens you of their existance and of their way of life.
+                </p>
+                <p>
+                    He extends a gesture of peace to you for your assistance in bringing down one of their escaped prisoners and offers you his assistance in turn.
+                </p>
+                <hr id="bar" />
+                <p><a href="#settle">Stay on the planet.</a></p>
+                <p><a href="#spaceship">Request to take a spaceship back to your planet.</a></p>
+                <p><a href="#teleport">Present Wallet to alien ambasador.</a></p>
+                <hr id="bar" />
+                <p><a href="#killAlien">Retreat!</a></p>
             </div>
         </div>
 
@@ -247,17 +282,29 @@
 
         <!-- Tier 7 --> <!-- DEATH!!! -->
         <!-- Take ship -->
-        <div id="spaceship" class="step slide">
+        <div id="spaceship" class="step slide" data-y="5500" data-x="1500">
             <div class="slide-text">
-                <p>Take spaceship back home slide</p>
+                <p>
+                    You are provided with a ship, supplies, and a pilot you return you home. Several hours into your voyage your spaceship suddenly changes course.
+                    You confront the pilot but he pays no attention to you. Soon after, you arrive at an inhabited meteor station which was not a planned destination on way back home.
+                    Unbeknownst to you, the meteor station is actually a prison which the pilot has sold you off to enslavement.
+                </p>
+                <hr id="bar" />
+                <p id="centerControl"><a href="#gameover">Game Over</a></p>
             </div>
         </div>
-
         <!-- Tier 7 --> <!-- DEATH!!! -->
         <!-- Stay on planet -->
         <div id="settle" class="step slide">
             <div class="slide-text">
                 <p>Stay on alien planet slide</p>
+            </div>
+        </div>
+        <!-- Tier 7 -->
+        <!-- Teleport Home -->
+        <div id="teleport" class="step slide">
+            <div class="slide-text">
+                <p>teleport home slide</p>
             </div>
         </div>
 
