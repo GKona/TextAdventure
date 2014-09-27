@@ -30,7 +30,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57ce4e', end
 /* styling for all slides */
 .slide {
     display: block;
-    width: 710px;
+    width: 725px;
     height: auto;
     padding: 40px 60px;
     background-color: white;
